@@ -41,7 +41,7 @@
   <!-- Perf hints -->
   <link rel="preload" href="styles.css" as="style" />
 
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="styles.css?v=2" />
 
   <!-- Structured data: Organization + WebSite + EducationalOrganization -->
   <script type="application/ld+json">
@@ -123,6 +123,7 @@
         <a href="#" data-nav="subjects">Subjects</a>
         <a href="#" data-nav="about">About</a>
       </nav>
+      <div class="game-stats" id="game-stats"></div>
       <a href="#" class="btn btn-primary btn-sm" data-action="start">Start Practice</a>
     </div>
   </header>
@@ -145,6 +146,7 @@
       </div>
 
       <div class="container">
+        <div class="game-panel" id="game-panel"></div>
         <h2 class="section-title">Practice by Subject</h2>
         <p class="section-sub">Pick a subject to begin a focused PYQ set.</p>
         <div class="subject-grid" id="home-subjects"></div>
@@ -263,8 +265,11 @@
     <div class="footer-bottom">© <span id="year"></span> YESPYQ.com · Built for UPSC CSE aspirants</div>
   </footer>
 
-  <script src="data.js"></script>
-  <script src="pyq.js"></script>
-  <script src="app.js"></script>
+  <canvas id="confetti"></canvas>
+  <div id="fx-layer"></div>
+
+  <script src="data.js?v=2"></script>
+  <script src="pyq.js?v=2"></script>
+  <script src="app.js?v=2"></script>
 </body>
 </html>
