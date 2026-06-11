@@ -6,3 +6,6 @@
 # OS / misc
 *.log
 node_modules/
+
+# PYQ source PDFs (large; kept local)
+pyq_src/
