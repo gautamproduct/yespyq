@@ -1,0 +1,8 @@
+# Local tooling / editor
+.claude/
+.vscode/
+.DS_Store
+
+# OS / misc
+*.log
+node_modules/

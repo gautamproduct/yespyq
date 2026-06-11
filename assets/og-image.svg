@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#eff6ff"/>
+      <stop offset="1" stop-color="#ffffff"/>
+    </linearGradient>
+    <linearGradient id="mark" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#3b82f6"/>
+      <stop offset="1" stop-color="#1d4ed8"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect x="0" y="0" width="1200" height="12" fill="#2563eb"/>
+
+  <!-- logo mark -->
+  <rect x="90" y="90" width="96" height="96" rx="22" fill="url(#mark)"/>
+  <path d="M114 132 L142 162 L182 108" fill="none" stroke="#ffffff" stroke-width="12"
+        stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="206" y="158" font-family="Arial, sans-serif" font-size="58" font-weight="800" fill="#0f172a">YES<tspan fill="#2563eb">PYQ</tspan></text>
+
+  <text x="90" y="320" font-family="Arial, sans-serif" font-size="76" font-weight="800" fill="#0f172a">UPSC CSE</text>
+  <text x="90" y="408" font-family="Arial, sans-serif" font-size="76" font-weight="800" fill="#2563eb">Previous Year Questions</text>
+
+  <text x="90" y="478" font-family="Arial, sans-serif" font-size="34" fill="#475569">Prelims PYQs · Subject-wise &amp; Year-wise · 2021–2025</text>
+  <text x="90" y="528" font-family="Arial, sans-serif" font-size="34" fill="#475569">Instant answer keys + detailed explanations</text>
+
+  <rect x="90" y="566" width="280" height="2" fill="#e2e8f0"/>
+  <text x="90" y="600" font-family="Arial, sans-serif" font-size="26" font-weight="700" fill="#1d4ed8">yespyq.com</text>
+</svg>

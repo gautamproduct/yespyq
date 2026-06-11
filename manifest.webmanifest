@@ -1,0 +1,13 @@
+{
+  "name": "YESPYQ — UPSC CSE Previous Year Questions",
+  "short_name": "YESPYQ",
+  "description": "Practice UPSC CSE Prelims previous year questions (PYQs) subject-wise and year-wise with instant answers and detailed explanations.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#2563eb",
+  "icons": [
+    { "src": "assets/favicon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }
+  ]
+}
