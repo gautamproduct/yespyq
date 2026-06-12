@@ -46,7 +46,7 @@
   <!-- Perf hints -->
   <link rel="preload" href="styles.css" as="style" />
 
-  <link rel="stylesheet" href="styles.css?v=7" />
+  <link rel="stylesheet" href="styles.css?v=8" />
 
   <!-- Structured data: Organization + WebSite + EducationalOrganization -->
   <script type="application/ld+json">
@@ -141,7 +141,6 @@
           <span class="pill">UPSC Civil Services Examination</span>
           <h1>Master UPSC CSE with <span class="accent">Previous Year Questions</span></h1>
           <p class="lead">Practice authentic Prelims PYQs — sorted subject-wise and year-wise — with answer keys and crisp explanations.</p>
-          <div class="hero-stats" id="hero-stats"></div>
         </div>
       </div>
 
@@ -165,31 +164,21 @@
       </div>
     </section>
 
-    <!-- PRACTICE / QUIZ VIEW -->
+    <!-- PRACTICE / QUESTION-BANK VIEW -->
     <section class="view hidden" id="view-practice">
-      <div class="container quiz-shell">
-        <div class="quiz-topbar">
-          <div class="quiz-meta" id="quiz-meta"></div>
-          <div class="quiz-progress">
-            <div class="quiz-progress-bar"><span id="progress-fill"></span></div>
-            <span class="quiz-count" id="quiz-count"></span>
+      <div class="container browse">
+        <aside class="filters" id="filters"></aside>
+        <div class="qlist-wrap">
+          <div class="qlist-head">
+            <button class="filter-toggle btn btn-ghost btn-sm" id="filter-toggle">☰ Filters</button>
+            <h2 id="qlist-title">All Questions</h2>
+            <span class="qlist-count" id="qlist-count"></span>
+          </div>
+          <div class="qlist" id="qlist"></div>
+          <div class="qlist-more">
+            <button class="btn btn-ghost hidden" id="load-more">Show more questions</button>
           </div>
         </div>
-
-        <div id="quiz-body"></div>
-
-        <div class="quiz-nav">
-          <button class="btn btn-ghost" id="btn-prev">← Previous</button>
-          <button class="btn btn-ghost" id="btn-quit">Exit</button>
-          <button class="btn btn-primary" id="btn-next">Next →</button>
-        </div>
-      </div>
-    </section>
-
-    <!-- RESULTS VIEW -->
-    <section class="view hidden" id="view-results">
-      <div class="container">
-        <div class="result-card" id="result-card"></div>
       </div>
     </section>
 
@@ -225,8 +214,9 @@
   <canvas id="confetti"></canvas>
   <div id="fx-layer"></div>
 
-  <script src="data.js?v=7"></script>
-  <script src="pyq.js?v=7"></script>
-  <script src="app.js?v=7"></script>
+  <script src="data.js?v=8"></script>
+  <script src="pyq.js?v=8"></script>
+  <script src="pyq-exp.js?v=8" defer></script>
+  <script src="app.js?v=8"></script>
 </body>
 </html>
