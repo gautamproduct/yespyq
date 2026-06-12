@@ -3,13 +3,9 @@
 const $  = (s, r = document) => r.querySelector(s);
 const $$ = (s, r = document) => [...r.querySelectorAll(s)];
 
-/* ---------- drop unwanted years (per product decision) ---------- */
-const DROP_YEARS = new Set([2021, 2022]);
-for (let i = QUESTIONS.length - 1; i >= 0; i--)
-  if (DROP_YEARS.has(QUESTIONS[i].year)) QUESTIONS.splice(i, 1);
-
 const subjectMap = Object.fromEntries(SUBJECTS.map(s => [s.id, s]));
-const YEARS = [...new Set(QUESTIONS.map(q => q.year))].sort((a, b) => b - a);
+const YEARS = [...new Set(QUESTIONS.map(q => q.year))].filter(Boolean).sort((a, b) => b - a);
+const YEARS_SHOWN = YEARS.slice(0, 12);   // keep the year grid clean
 
 const LESSON_SIZE = 10;     // bite-sized lessons
 const DAILY_GOAL = 50;      // XP per day
@@ -151,7 +147,7 @@ function renderSubjects() {
   $("#home-subjects").innerHTML = html; $("#all-subjects").innerHTML = html;
 }
 function renderYears() {
-  $("#home-years").innerHTML = YEARS.map(y =>
+  $("#home-years").innerHTML = YEARS_SHOWN.map(y =>
     `<div class="year-card" data-year="${y}"><b>${y}</b><span>${countByYear(y)} questions</span></div>`
   ).join("");
 }
